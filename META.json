@@ -1,0 +1,80 @@
+{
+   "abstract" : "Serializer for handling JSON data",
+   "author" : [
+      "Dan Book <dbook@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.042, CPAN::Meta::Converter version 2.150005",
+   "license" : [
+      "artistic_2"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : 2
+   },
+   "name" : "Dancer2-Serializer-JSONMaybeXS",
+   "no_index" : {
+      "directory" : [
+         "eg",
+         "examples",
+         "inc",
+         "share",
+         "t",
+         "xt"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Pod::Coverage::TrustPod" : "0",
+            "Test::Pod" : "1.41",
+            "Test::Pod::Coverage" : "1.08"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dancer2" : "0.165000",
+            "Dancer2::Core::Role::Serializer" : "0.165000",
+            "JSON::MaybeXS" : "1.003005",
+            "Moo" : "2.000000",
+            "Scalar::Util" : "0",
+            "perl" : "5.008001"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "HTTP::Request::Common" : "0",
+            "Plack" : "1.0035",
+            "Test::More" : "0.88"
+         }
+      }
+   },
+   "provides" : {
+      "Dancer2::Serializer::JSONMaybeXS" : {
+         "file" : "lib/Dancer2/Serializer/JSONMaybeXS.pm",
+         "version" : "0.001"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/Grinnz/Dancer2-Serializer-JSONMaybeXS/issues"
+      },
+      "homepage" : "https://github.com/Grinnz/Dancer2-Serializer-JSONMaybeXS",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/Grinnz/Dancer2-Serializer-JSONMaybeXS.git",
+         "web" : "https://github.com/Grinnz/Dancer2-Serializer-JSONMaybeXS"
+      }
+   },
+   "version" : "0.001",
+   "x_contributors" : [
+      "Dan Book <grinnz@grinnz.com>"
+   ]
+}
+
