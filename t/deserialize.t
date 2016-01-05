@@ -11,7 +11,7 @@ my $logger = Dancer2::Logger::Capture->new;
 isa_ok( $logger, 'Dancer2::Logger::Capture' );
 
 {
-    package App;
+    package MyApp;
     use Dancer2;
 
     set serializer => 'JSONMaybeXS';
@@ -41,7 +41,7 @@ isa_ok( $logger, 'Dancer2::Logger::Capture' );
     };
 }
 
-my $test = Plack::Test->create( App->to_app );
+my $test = Plack::Test->create( MyApp->to_app );
 
 subtest 'PUT request with parameters' => sub {
     for my $type ( qw<params data> ) {
@@ -59,7 +59,7 @@ subtest 'PUT request with parameters' => sub {
     }
 };
 
-my $app = App->to_app;
+my $app = MyApp->to_app;
 use utf8;
 use JSON::MaybeXS;
 use Encode;
