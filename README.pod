@@ -48,6 +48,6 @@ This is free software, licensed under:
 
 =head1 SEE ALSO
 
-L<Dancer2>
+L<Dancer2::Serializer::JSON>
 
 =cut

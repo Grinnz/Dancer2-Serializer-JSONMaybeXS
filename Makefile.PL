@@ -24,6 +24,8 @@ my %WriteMakefileArgs = (
     "Scalar::Util" => 0
   },
   "TEST_REQUIRES" => {
+    "Dancer2::Logger::Capture" => "0.165000",
+    "Encode" => 0,
     "HTTP::Request::Common" => 0,
     "Plack" => "1.0035",
     "Test::More" => "0.88"
@@ -38,6 +40,8 @@ my %WriteMakefileArgs = (
 my %FallbackPrereqs = (
   "Dancer2" => "0.165000",
   "Dancer2::Core::Role::Serializer" => "0.165000",
+  "Dancer2::Logger::Capture" => "0.165000",
+  "Encode" => 0,
   "HTTP::Request::Common" => 0,
   "JSON::MaybeXS" => "1.003005",
   "Moo" => "2.000000",
