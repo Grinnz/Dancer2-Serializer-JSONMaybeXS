@@ -13,7 +13,7 @@ Dancer2::Serializer::JSONMaybeXS - Serializer for handling JSON data
 
 This is a serializer engine for the L<Dancer2> web framework that allows you to
 turn Perl data structures into JSON output and vice-versa. It uses
-L<JSON::MaybeXS>, which is a faster and cleaner interface to JSON-encoding
+L<JSON::MaybeXS>, a faster and cleaner interface to XS and pure-perl JSON
 modules than L<JSON>.pm.
 
 =head1 METHODS
