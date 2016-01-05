@@ -2,7 +2,6 @@ package Dancer2::Serializer::JSONMaybeXS;
 
 use Moo;
 use JSON::MaybeXS ();
-use Scalar::Util 'blessed';
 
 our $VERSION = '0.001';
 

@@ -19,8 +19,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Dancer2" => "0.165000",
     "JSON::MaybeXS" => "1.003005",
-    "Moo" => "2.000000",
-    "Scalar::Util" => 0
+    "Moo" => "2.000000"
   },
   "TEST_REQUIRES" => {
     "Encode" => 0,
@@ -42,7 +41,6 @@ my %FallbackPrereqs = (
   "JSON::MaybeXS" => "1.003005",
   "Moo" => "2.000000",
   "Plack" => "1.0035",
-  "Scalar::Util" => 0,
   "Test::More" => "0.88"
 );
 
