@@ -1,4 +1,5 @@
 {{$NEXT}}
+  - Fix test failure with Dancer2 0.200000
 
 0.001     2016-01-04 21:44:14 EST
   - First release

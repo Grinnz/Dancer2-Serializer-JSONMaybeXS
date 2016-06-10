@@ -170,11 +170,7 @@ note 'Check serialization errors'; {
         is( $msg->{'level'}, 'core', 'Correct level' );
         like(
             $msg->{'message'},
-            qr{
-                ^
-                \QFailed to deserialize the request: \E
-                \Qmalformed number\E
-            }x,
+            qr{^Failed to deserialize (?:the request|content): malformed number},
             'Correct error message',
         );
     }
