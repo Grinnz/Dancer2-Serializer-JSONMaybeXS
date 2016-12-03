@@ -3,7 +3,7 @@ package Dancer2::Serializer::JSONMaybeXS;
 use Moo;
 use JSON::MaybeXS ();
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 with 'Dancer2::Core::Role::Serializer';
 
