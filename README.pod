@@ -2,7 +2,7 @@
 
 =head1 NAME
 
-Dancer2::Serializer::JSONMaybeXS - Serializer for handling JSON data
+Dancer2::Serializer::JSONMaybeXS - (DEPRECATED) Serializer for handling JSON data
 
 =head1 SYNOPSIS
 
@@ -11,24 +11,10 @@ Dancer2::Serializer::JSONMaybeXS - Serializer for handling JSON data
 
 =head1 DESCRIPTION
 
-This is a serializer engine for the L<Dancer2> web framework that allows you to
-turn Perl data structures into JSON output and vice-versa. It uses
-L<JSON::MaybeXS>, a faster and cleaner interface to XS and pure-perl JSON
-modules than L<JSON>.pm.
-
-=head1 METHODS
-
-=head2 deserialize
-
- my $data = $serializer->deserialize($string);
-
-Deserializes a JSON string into a Perl data structure.
-
-=head2 serialize
-
- my $string = $serializer->serialize($data);
-
-Serializes a Perl data structure into a JSON string.
+This is a DEPRECATED serializer engine for the L<Dancer2> web framework.
+L<Dancer2> now uses L<JSON::MaybeXS> natively in the default
+L<Dancer2::Serializer::JSON> (as of version C<0.201000>), so this module is no
+longer needed.
 
 =head1 BUGS
 
